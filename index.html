@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <p id="p">0</p>
+        <div>
+            <button onclick="validation('7')">7</button>
+            <button onclick="validation('8')">8</button>
+            <button onclick="validation('9')">9</button>
+            <button onclick="validation('%')" id="gray">%</button>
+        </div>
+        <div>
+            <button onclick="validation('4')">4</button>
+            <button onclick="validation('5')">5</button>
+            <button onclick="validation('6')">6</button>
+            <button onclick="validation('+')"  id="gray">+</button>
+        </div>
+        <div>
+            <button onclick="validation('1')">1</button>
+            <button onclick="validation('2')">2</button>
+            <button onclick="validation('3')">3</button>
+            <button onclick="validation('-')"  id="gray">-</button>
+        </div>
+        <div>
+            <button onclick="validation('0')">0</button>
+            <button onclick="validation('.')" id="gray">.</button>
+            <button onclick="getresult()"  id="gray">=</button>
+            <button onclick="validation('*')"  id="gray">*</button>
+        </div>
+        <button onclick="clr()" id="clrbtn">Clear</button>
+    </div>
+
+<script src="index.js"></script>
+</body>
+</html>
